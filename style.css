@@ -1,0 +1,631 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,600,700,800&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Righteous&subset=latin-ext');
+
+/* general styles */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+.container {
+	max-width:1200px;
+	margin: 0 auto;.
+}
+.clearfix:before,
+.clearfix:after {
+   content: " "; 
+   visibility: hidden;
+   display: table;
+   clear: both;
+}
+
+
+[class*="col-"] { 
+	width: 100%;  
+	float:left;
+	text-align: center;
+}
+
+
+section > .container {
+	margin: 50px auto 0;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: "Open Sans";
+	font-weight: 800;
+}
+
+
+/* universal modificators */
+.small-text {
+	color: #666;
+	font-size: 13px;
+	line-height: 180%;
+	padding: 20px 50px;
+}
+
+.weight-200 {font-weight: 200}
+.weight-800 {font-weight: 800}
+
+.bg-darkgrey {background-color: #313234;}
+.bg-lightblue {background-color: #00C7E8;}
+
+.darkgrey {color: #313234;}
+.lightblue {color: #00C7E8;}
+
+
+/* header */
+header {
+	background: #313234;
+	position: relative; 
+	z-index: 1000;
+	text-align: center;
+}
+
+header>nav>ul {
+	list-style-type: none;
+}
+
+header>nav>ul>li {
+	text-align: center;
+	border-top: 1px solid #666; 
+}
+
+header>nav>ul>li>a {
+	line-height: 70px;
+	padding: 0 10px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header>nav>img {
+	padding: 20px;
+	width: 150px; 
+	height: 30px;
+	margin: 0 auto;
+	}
+	
+/* hero */
+.hero {
+	height: calc(80vh - 70px);
+	width: 100%;
+	background-image: url(http://www.szpadzik.com/kodilla/main_for_kodilla2.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: relative;
+}
+
+.slogan {
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.5);
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 35px;
+	overflow: visible;
+	position: relative;
+	text-align: center;
+}
+
+.slogan > h1 {
+	color: #fff;
+	line-height: 110%;
+	font-size: 35px;
+}
+	
+/* profits */
+.profits .icon {
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	border: 0;
+	color: #fff;
+	border-radius: 15%;
+	font-size: 40px;
+	margin: 15px auto;
+	background-color: #313234;
+}
+
+.profits div {
+	text-align: center;
+}
+
+.profits > .row > div {
+	padding: 0 50px;
+}
+
+
+
+/* galeria */
+.gallery div {
+	text-align: center;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+.gallery .row [class*="col10-"] {
+	height: 47vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.ico-layer {
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+.ico-layer a {
+	color: #fff;
+}
+
+.ico-layer i{
+	position: relative;;
+	top: 75%;
+	transform: translateY(-50%);
+	padding:15px;
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 20%;
+}
+
+
+
+/* team */
+
+.team {
+	margin: 50px 0;
+}
+
+.team .person {
+	height: 50vw;
+	width: 50vw;
+	max-width: 250px;
+	max-height: 250px;
+	background: #666;
+	border-radius:50%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.team .person > img {
+	width: 100%;
+	text-align: center;
+}
+
+.team .person .role-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	border-radius:50%;
+	width: 100%;
+	height: 100%;
+}
+
+.team .person .role-desc p {
+	color: #fff;
+	font-weight: bold;
+	font-size: 4vw;
+	top: 75%;
+	transform: translateY(-50%);
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.team .person:hover .role-desc {
+	opacity: 100;
+}
+
+.team [class*="col"] p {
+	display: block;
+	margin: 20px auto;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+/* promotion - bar */
+
+.promotion-bar {
+	background: url(http://www.szpadzik.com/kodilla/kdd_bg.png);
+	width: 100%;
+}
+
+.promotion-bar img.sec-one{
+	padding-top: 50px;
+	width: 80%;
+	max-width: 300px;
+	text-align: center;
+	color: #fff;
+}
+
+.text-promotion-bar,
+.text-promotion-bar div [class*="col"] {
+	text-align: center;
+	color: #fff;
+	padding: 0 15px 15px;
+}
+
+.text-promotion-bar h1 {
+	padding: 30px 15px 15px;
+	text-align: center;
+	font-size: 25px;
+}
+
+/* numbers */
+
+.numbers .container > div{
+	margin-left:50px;
+	margin-right:50px;	
+}
+
+.numbers p {
+	font-size: 16px;
+	font-weight: bold;
+}
+.numbers .main-numbers {
+	font-family: 'Righteous';
+	font-size: 55px;
+	padding-top: 50px;	
+}
+
+/* footer */
+
+footer {
+	background: #313234;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+footer .container [class*="col"] {
+	text-align: left;
+	padding: 0 0 20px 0;
+	color: #CCC;
+}
+
+footer .container > .row > div {
+	padding: 0 25px;
+}
+
+footer h2 {
+	padding: 40px 0 20px 0;
+	color: #fff;
+}
+
+footer h2::after {
+	content: "__________";
+	color: #fff;
+	transform: translateY(-35%);
+	display: block;
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+footer a.mail {
+	color: #fff;
+	text-decoration: none;
+	backgroud-color: none;;
+}
+
+footer a.mail:hover {
+	color: #00C7E8;
+	text-decoration: none;
+}
+
+footer .social a {
+	text-decoration: none;
+	display: inline-block;
+	background-color: #00C7E8;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 3px;
+	margin-top: 15px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+footer .social a i.fa {
+	font-size: 14px;
+	line-height: 100%;
+	color: #fff;
+	transition: 0.5s;
+}
+
+footer .social a:hover {
+	background-color: #fff;
+}
+	
+footer .social a:hover i.fa {
+	color: #000;
+}
+
+.copyright {
+	background-color: #222;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+
+/** grid 12 **/
+
+div{
+  box-sizing: border-box;
+}
+
+.row{
+	padding: 0;
+	margin: 0;
+}
+
+.row:before,
+.row:after {
+	content: ""; 
+	display: table;
+	clear: both;
+}
+
+[class*="col"] {
+	float: left;
+	min-height: 1px;
+}
+
+@media (max-width: 767px){ 
+
+.col-s-1 {width: 8.33%;} 
+.col-s-2 {width: 16.66%;} 
+.col-s-3 {width: 25%;} 
+.col-s-4 {width: 33.33%;} 
+.col-s-5 {width: 41.66%;} 
+.col-s-6 {width: 50%;} 
+.col-s-7 {width: 58.33%;} 
+.col-s-8 {width: 66.66%;} 
+.col-s-9 {width: 75%;} 
+.col-s-10 {width: 83.33%;} 
+.col-s-11 {width: 91.66%;} 
+.col-s-12 {width: 100%;} 
+
+.col-s-offset-1 {margin-left: 8.33%;}
+.col-s-offset-2 {margin-left: 16.66%;}
+.col-s-offset-3 {margin-left: 25%;}
+.col-s-offset-4 {margin-left: 33.33%}
+.col-s-offset-5 {margin-left: 41.66%;}
+.col-s-offset-6 {margin-left: 50%;}
+.col-s-offset-7 {margin-left: 58.33%;}
+.col-s-offset-8 {margin-left: 66.66%;}
+.col-s-offset-9 {margin-left: 75%;}
+.col-s-offset-10 {margin-left: 83.33%;}
+.col-s-offset-11 {margin-left: 91.66%;}
+.col-s-offset-12 {margin-left: 100%;}
+
+/** grid 10 **/
+.col10-s-1 {width: 10%;}
+.col10-s-2 {width: 20%;}
+.col10-s-3 {width: 30%;}
+.col10-s-4 {width: 40%}
+.col10-s-5 {width: 50%;}
+.col10-s-6 {width: 60%;}
+.col10-s-7 {width: 70%;}
+.col10-s-8 {width: 80%;}
+.col10-s-9 {width: 90%;}
+.col10-s-10 {width: 100%;}
+
+.col10-s-offset-1 {margin-left: 10%;}
+.col10-s-offset-2 {margin-left: 20%;}
+.col10-s-offset-3 {margin-left: 30%;}
+.col10-s-offset-4 {margin-left: 40%}
+.col10-s-offset-5 {margin-left: 50%;}
+.col10-s-offset-6 {margin-left: 60%;}
+.col10-s-offset-7 {margin-left: 70%;}
+.col10-s-offset-8 {margin-left: 80%;}
+.col10-s-offset-9 {margin-left: 90%;}
+
+}  /** media (max-width: 768px) **/
+
+@media (min-width: 768px) {
+	
+/** grid 12 **/
+.col-m-1 {width: 8.33%;} 
+.col-m-2 {width: 16.66%;} 
+.col-m-3 {width: 25%;} 
+.col-m-4 {width: 33.33%;} 
+.col-m-5 {width: 41.66%;} 
+.col-m-6 {width: 50%;} 
+.col-m-7 {width: 58.33%;} 
+.col-m-8 {width: 66.66%;} 
+.col-m-9 {width: 75%;} 
+.col-m-10 {width: 83.33%;} 
+.col-m-11 {width: 91.66%;} 
+.col-m-12 {width: 100%;}
+
+.col-m-offset-1 {margin-left: 8.33%;}
+.col-m-offset-2 {margin-left: 16.66%;}
+.col-m-offset-3 {margin-left: 25%;}
+.col-m-offset-4 {margin-left: 33.33%}
+.col-m-offset-5 {margin-left: 41.66%;}
+.col-m-offset-6 {margin-left: 50%;}
+.col-m-offset-7 {margin-left: 58.33%;}
+.col-m-offset-8 {margin-left: 66.66%;}
+.col-m-offset-9 {margin-left: 75%;}
+.col-m-offset-10 {margin-left: 83.33%;}
+.col-m-offset-11 {margin-left: 91.66%;}
+.col-m-offset-12 {margin-left: 100%;}
+
+/** grid 10 **/
+.col10-m-1 {width: 10%;}
+.col10-m-2 {width: 20%;}
+.col10-m-3 {width: 30%;}
+.col10-m-4 {width: 40%}
+.col10-m-5 {width: 50%;}
+.col10-m-6 {width: 60%;}
+.col10-m-7 {width: 70%;}
+.col10-m-8 {width: 80%;}
+.col10-m-9 {width: 90%;}
+.col10-m-10 {width: 100%;}
+
+.col10-m-offset-1 {margin-left: 10%;}
+.col10-m-offset-2 {margin-left: 20%;}
+.col10-m-offset-3 {margin-left: 30%;}
+.col10-m-offset-4 {margin-left: 40%}
+.col10-m-offset-5 {margin-left: 50%;}
+.col10-m-offset-6 {margin-left: 60%;}
+.col10-m-offset-7 {margin-left: 70%;}
+.col10-m-offset-8 {margin-left: 80%;}
+.col10-m-offset-9 {margin-left: 90%;}
+
+section > .container {
+	margin: 50px auto;
+}
+
+
+/* header */ 
+header {
+	text-align: left;;
+}
+
+header>nav>ul {
+	float: right;
+}
+
+header>nav>ul>li {
+	display: inline-block;
+	border: 0px;
+}
+
+header>nav>ul>li>a:hover {
+	color: #999;
+}
+
+header>nav>ul>li:hover {
+	background: inherit;
+}
+
+/* hero */
+
+.slogan {
+	max-width: 800px;
+	float: right;
+}
+
+.slogan > h1 {
+	font-size: 50px;
+}
+
+/* profits */
+.profits .icon:hover {
+	background-color: #00C7E8
+}
+
+.profits .icon:hover  ~ h2 {
+	color: #00C7E8
+}
+
+
+/* gallery */
+.gallery .row [class*="col10-"] {
+	height: 19.5vw;
+}
+
+.ico-layer {
+	top: -100%; 
+	background-color: rgba(0,0,0,0.5);
+	transition: ease 0.5s;
+}
+
+[class*="col10-"]:hover > .ico-layer {
+	top: 0; 
+}
+
+.ico-layer a {
+	color: black;
+}
+
+.ico-layer a:hover {
+	color: #666;
+}
+
+.ico-layer i{
+	top: 50%;
+	padding:10px;
+	background-color: #ccc;
+	border-radius: 20%;
+}
+
+/* team  */
+.team .person {
+	height: 15vw;
+	width: 15vw;
+}
+
+.team .person .role-desc p {
+	font-size: 1.3vw;
+}
+
+.team .person .role-desc {
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: ease 0.5s;
+}
+
+/* promotions */
+.promotion-bar img.sec-one{
+	width: 310px;
+	margin-left: 10%;
+	margin-top: 60px;
+	margin-bottom: -5px;
+}
+
+.text-promotion-bar,
+.text-promotion-bar div [class*="col"] {
+	text-align: left;
+	color: #fff;
+	padding: 10px 0px 40px 20px;
+}
+
+.text-promotion-bar h1 {
+	padding: 70px 15px 0 15px;
+	font-size: 35px;
+}
+
+/* numbers */
+.numbers .container > div{
+	margin-left:100px;
+	margin-right:100px;	
+}
+
+.numbers .main-numbers {
+	padding-top: 0;	
+}
+
+/* footer */
+footer {
+	margin-top: 0px;
+	font-size: 14px;
+}
+
+footer h2::after {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+} /** media (min-width: 768px) **/
+
+
+
